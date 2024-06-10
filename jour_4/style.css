@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contener{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+   
+    
+}
+.research{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+    transform-origin: right;
+    transition: width 1s ease-in;
+    border-radius: 20px;
+}
+.research button{
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}  
+input{
+    border: 0;
+    font-weight: bolder;
+    width: 300px;
+    padding: 10px;
+}
+
