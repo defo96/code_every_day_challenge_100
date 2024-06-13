@@ -1,61 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --left-bg-color: rgba(87,84,236,0.7);
+    --right-bg-color: rgba(43,43,43,0.8);
+    --left-btn-hover-color: rgba(87,84,236,1);
+    --right-btn-hover-color: rgba(28,122,28,1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    display: flex;
-    justify-content: center;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
-}
-.jeu{
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    overflow: hidden;
+    margin: 0;
 }
 h1{
-   font-family: roboto,sans-serif;
-   font-size: 3.5em;
-   font-weight: bolder;
-   color: white;
-   white-space: nowrap;
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
-button{
-   font-family: roboto,sans-serif;
-   font-size: 1.5em;
-   font-weight: 400;
-   padding: 10px 30px 10px 30px ;
-   background-color: rgb(0, 0, 0,0);
-   outline: 3px solid white;
-   color: white;
-   border: none;
+.btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+
 }
-.Playstation button:hover{
-    background-color: steelblue;
-    outline: 3px solid steelblue;
+.split.left .btn:hover{
+    background-color: var(--left-btn-hover-color);
+    border-color: var(--left-btn-hover-color);
 }
-.xbox button:hover{
-    background-color: green;
-    outline: 3px solid green;
+.split.right .btn:hover{
+    background-color: var(--right-btn-hover-color);
+    border-color: var(--right-btn-hover-color);
 }
-.Playstation{
-    background-image: url(/playstation.webp);
-    transition: width 0.5s linear;
-}
-.xbox{
-    background-image: url(/Xbox-One-X.webp);
-    transition: width 0.5s linear;
+.container{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background: #333;
 }
 
-.xbox:hover{
-    width: 200%;
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.active{
-    width: 100vw;
+.split.left{
+    left: 0;
+    background: url(/playstation.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+.split.right{
+    right: 0;
+    background: url(/Xbox-One-X.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+.split.right, .split.left, .split.right::before,.split.left::before{
+    transition: all var(--speed);
+}
+.hover-left .left{
+    width: var(--hover-width);
+}
+.hover-left .right{
+    width: var(--other-width);
+}
+
+.hover-right .right{
+    width: var(--hover-width);
+}
+.hover-right .left{
+    width: var(--other-width);
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 2rem;
+        top: 30%;
+    }
+    .btn{
+        padding: 1.2rem;
+        width: 12rem;
+    }
 }

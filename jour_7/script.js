@@ -1,15 +1,11 @@
-const jeux = document.querySelectorAll('.jeu')
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
+const container = document.querySelector('.container')
 
 
-jeux.forEach(function(jeu){
-            jeu.addEventListener('mouseenter', function(){
-                remove()
-                jeu.classList.add('active')
-            })
-})
+left.addEventListener('mouseenter',()=> container.classList.add('hover-left'))
+left.addEventListener('mouseleave',()=> container.classList.remove('hover-left'))
 
-function remove(){
-    jeux.forEach(function(jeu){
-        jeu.classList.remove('active')
-    })
-}
+
+right.addEventListener('mouseenter',()=> container.classList.add('hover-right'))
+right.addEventListener('mouseleave',()=> container.classList.remove('hover-right'))
