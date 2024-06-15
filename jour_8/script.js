@@ -1,9 +1,9 @@
-const input1 = document.getElementById('name1')
-const input2 = document.getElementById('name2')
-const email = document.getElementById('email')
+const labels = document.querySelectorAll('.form-control label')
 
-
-const textemail = email.innerText.toString()
-
-console.log(input2)
+labels.forEach(label =>{
+    label.innerHTML = label.innerText
+          .split('')
+          .map((letter,idx) => `<span style="transition-delay:${idx * 30}ms">${letter}</span>`)
+          .join('')
+})
 

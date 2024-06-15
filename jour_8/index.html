@@ -8,28 +8,22 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="form">
-        <div class="sous_form">
-            <h2>Please Login</h2>
-            <div class="sous_form1">
-                <form action="">
-                    <div class="email">
-                        <label for="name1" id="email">Email</label>
-                        <input type="text" id="name1" name="name" >
-                    </div>
-                    <div class="password">
-                        <label for="name2" id="password">Password</label>
-                        <input type="text" id="name2" name="name" >
-                    </div>
-                   
-                </form>
+    <div class="container">
+        <h1> Please Login</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label> Email</label>
             </div>
-            
-            <div class="sous_form2">
-                <button> Login </button> 
-                <p> Don't have an account? <span>Register</span></p>
+            <div class="form-control">
+                <input type="password" required>
+                <label> password</label>
             </div>
-        </div>
+
+            <button class="btn">Login</button>
+
+            <p class="text">Don't have an account? <a href="#"> Register </a> </p>
+        </form>
     </div>
 </body>
 </html>

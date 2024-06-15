@@ -1,98 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-.form{
-    background-color: slateblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 16%;
-    height: 40%;
-    padding: 25px;
-    border-radius: 10px;
-}
-.sous_form{
+    background-color: steelblue;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
-label{
-   
-    font-size: 1.2em;
-    font-family: 'robotb',sans-serif;
-    font-weight: bolder;
-    color: white;
-}
-.email{
-    position: relative;
-}
-#email{
-    position: absolute;
-    top: 0%;
-}
-#password{
-    position: absolute;
-    top: 0%;
-}
-.password{
-    position: relative;
-}
-h2{
-    font-size: 2em;
-    font-family: 'robotb',sans-serif;
-    font-weight: bolder;
-    text-align: center;
-}
-.input:focus{
-    outline: none;
-}
-input{
-    
-    border-bottom: 5px solid black;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    background-color: transparent;
-    height: 24px;
-    width: 100%;
-}
-.sous_form2{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-button{
-    font-size: 1.2em;
-    font-family: 'robotb',sans-serif;
-    font-weight: bolder;
-    border: none;
-    padding: 10px;
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
     border-radius: 5px;
-    background-color: blue;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
 }
-p{
-    font-size: 1em;
-    font-family: 'robotb',sans-serif;
-    font-weight: bolder;
-    color: blue;
+.container a{
+    text-decoration: center;
+    color: lightblue;
 }
-span{
-    color: white;
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+
+.text{
+    margin-top: 30px;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span, 
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);
 }
