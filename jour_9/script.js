@@ -1,20 +1,26 @@
-const audios = document.querySelectorAll('.audio')
+const sounds = ['applause','buzz','clignotants','frein','compresseur','test21']
+console.log(sounds)
 
-const elementaudio = document.querySelectorAll('.son')
+sounds.forEach(sound =>{
+    const btn = document.createElement('button')
+    btn.classList.add('btn')
+    
+    btn.innerText = sound
 
-console.log(elementaudio)
+    btn.addEventListener('click', ()=>{
+          stopSongs()
 
-
-
-audios.forEach((audio, index) =>{
-    audio.addEventListener('click', function(){
-        pause1()
-        elementaudio[index].play()
+        document.getElementById(sound).play()
     })
+
+    document.getElementById('buttons').appendChild(btn)
 })
-function pause1(){
-    elementaudio.forEach((element) =>{
-         element.pause()
-         element.load()
+
+
+function stopSongs(){
+    sounds.forEach(sound =>{
+        const song = document.getElementById(sound)
+        song.pause()
+        song.currentTime = 0;
     })
 }
