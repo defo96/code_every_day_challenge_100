@@ -1,14 +1,22 @@
-const chargement = document.getElementById('chargement')
-const eventkey = document.getElementById('eventkey')
-const eventkeycode = document.getElementById('eventkeycode')
-const evencode = document.getElementById('eventcode')
-const keycode = document.getElementById('keycode')
+const insert = document.getElementById('insert')
+
+
+
 
 
 window.addEventListener('keydown',(event)=>{
-    chargement.style.display = 'none'
-    keycode.style.display = 'flex'
-    eventkey.innerText = event.key
-    eventkeycode.innerText = event.keyCode
-    eventcode.innerText = event.code
+     insert.innerHTML = `
+     <div class="key">
+            ${event.key === ''? 'space' : event.key} 
+            <small> event.key</small>
+        </div>
+        <div class="key">
+            ${event.keyCode} 
+            <small> event.keyCode</small>
+        </div>
+        <div class="key">
+            ${event.code} 
+            <small>event.code</small>
+        </div>
+     `
 })
