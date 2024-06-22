@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: slateblue;
+    text-align: center;
+    color: #fff;
+}
+.bigcupfater{
+    display: flex;
+    justify-content: center;
+}
+.bigcup{
+    height: 40vh;
+    width: 12vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid blue;
+    
+}
+#paragraph{
+    height: 100%;
+    display: flex;
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: center;
+    color: slateblue;
+    background-color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+.smallcupsfater{
+    display: flex;
+    justify-content: center;
+}
+.smallcups{
+    height: 0vh;
+    width: 12vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.smallcup{
+    height: 12vh;
+    font-size: 0.7em;
+    width: 2vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid blue;
+    color: slateblue;
+}
+
+
+.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0%;
+    background-color: slateblue;
+    color: slategrey;
+    font-weight: bolder;
+    font-size: 1.5em;
+    border-radius: 0px 0px 20px 20px;
+    border: 0px solid blue;
+}
