@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: center; */
+    /* padding: 10%; */
+    /* margin: 1%; */
+}
+.activecontainer{
+    background-color: black;
+    color: white;
+}
+.button{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+}
+.activebutton{
+    color: black;
+    background-color: white;
+}
+button:focus{
+    outline: none;
+}
+.watch{
+    position: relative;
+    height: 50vh;
+    width: 30vw;
+}
+.second{
+    position: absolute;
+    z-index: 50;
+    bottom: 50%;
+    left: 50%;
+    height: 200px;
+    width: 2px;
+    background-color: orange;
+    transform-origin: bottom left;
+    rotate: 36deg;
+}
+.minute{
+    position: absolute;
+    z-index: 30;
+    bottom: 50%;
+    left: 50%;
+    height: 150px;
+    width: 5px;
+    background-color: black;
+    transform-origin: bottom right;
+    rotate: 342deg;
+}
+.activeminute{
+    background-color: white;
+}
+
+.hour{
+    position: absolute;
+    z-index: 20;
+    bottom: 50%;
+    left: 50%;
+    height: 100px;
+    width: 5px;
+    background-color: black;
+    transform-origin: bottom left;
+    rotate: 30deg;
+}
+.activehour{
+    background-color: white;
+}
+.point{
+    position: absolute;
+    bottom: 47%;
+    left: 48.2%;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    z-index: 100;
+    border: 1px solid orange;
+    background-color: black;
+    transform-origin: bottom left;
+}
+.texthour{
+    margin: 30px;
+    font-size: 3.5em;
+}
+#span{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 125px;
+    border-radius: 25px;
+}
