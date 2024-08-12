@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    
+}
+.bouton-up{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 48vh;
+    left: 30vw;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.bouton-down{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 51vh;
+    left: 28.5vw;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.container{
+    display: flex;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.container__images{
+    width: 70vw;
+    height: 400vh;
+    transition: all .4s linear;
+}
+.container__image-img{
+    height: 100vh;
+    width: 100%;
+}
+.container__image-img img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+.container__text{
+    width: 30vw;
+    height: 400vh;
+    transform: translate(0,-300vh);
+    transition: all .4s linear;
+}
+.container__text-nom_image1{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.container__text-nom_image2{
+    height: 100vh;
+    width: 100%;
+    background-color:antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.container__text-nom_image3{
+    height: 100vh;
+    width: 100%;
+    background-color:aqua ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.container__text-nom_image4{
+    height: 100vh;
+    width: 100%;
+    background-color:aquamarine ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
