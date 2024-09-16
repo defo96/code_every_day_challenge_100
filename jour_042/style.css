@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 20vw;
+    max-height: auto;
+    border: 1px solid rgb(214, 200, 200);
+    border-radius: 10px;
+}
+.container__search{
+    height: auto;
+    padding: 15px 20px;
+    background-color: rgb(46, 46, 151);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container__search h3{
+    
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.container__search p{
+    color: white;
+    font-size: .8em;
+}
+input{
+    margin: 15px 0px;
+    background-color: rgba(13, 13, 87, 0.829);
+    color: gray;
+    font-size: .8em;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px ;
+    border: none;
+    outline: none;
+    min-height: 4vh;
+}
+input:focus{
+    outline: none;
+}
+
+.container__profil{
+    width: 100%;
+    max-height: 40vh;
+    overflow-y:scroll;
+}
+.profil{
+    height: 100px;
+    padding: 0px 5px;
+    border-top: 2px solid rgb(209, 206, 206);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.nomAdress{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.nomAdress .nom{
+    font-weight: bolder;
+}
