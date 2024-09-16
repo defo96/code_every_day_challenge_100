@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="container__question active">
+            
+            <h2>Which language runs in a web browser ? </h2>
+
+            <div class="propositions">
+                
+                <div class="proposition-input">
+                    <input type="radio" name="q1" id="p1q1" value="false">
+                    <label for="p1q1"> Java </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q1" id="p2q1" value="false">
+                    <label for="p2q1"> C </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q1" id="p3q1" value="false">
+                    <label for="p3q1"> Python </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q1" id="p4q1" value="true">
+                    <label for="p4q1"> Javascript </label>
+                </div>
+            </div>
+            <button type="submit" class="container__btn">
+                Submit
+            </button>
+        </form>
+        <form class="container__question">
+            <h2>What does CSS stand for? </h2>
+
+            <div class="propositions">
+                
+                <div class="proposition-input">
+                    <input type="radio" name="q2" id="p1q2" value="false">
+                    <label for="p1q2"> Central Style Sheets </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q2" id="p2q2" value="true">
+                    <label for="p2q2"> Cascading Style Sheets </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q2" id="p3q2" value="false">
+                    <label for="p3q2"> Cascading Simple Sheets </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q2" id="p4q2" value="false">
+                    <label for="p4q2"> Cars SUVs Sailboats </label>
+                </div>
+            </div>
+            <button type="submit" class="container__btn">
+                Submit
+            </button>
+        </form>
+        <form class="container__question">
+            <h2>What does HTML stand for? </h2>
+
+            <div class="propositions">
+                
+                <div class="proposition-input">
+                    <input type="radio" name="q3" id="p1q3" value="true">
+                    <label for="p1q3"> Hypertext Markup Language </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q3" id="p2q3" value="false">
+                    <label for="p2q3"> Hypertext Markdown Language </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q3" id="p3q3" value="false">
+                    <label for="p3q3"> Hypertext Machine Language </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q3" id="p4q3" value="false">
+                    <label for="p4q3"> Helicopters Terminals Motorboats Lamborginis </label>
+                </div>
+            </div>
+            <button type="submit" class="container__btn">
+                Submit
+            </button>
+        </form>
+        <form class="container__question">
+            <h2>What year was Javascript launched? </h2>
+
+            <div class="propositions">
+                
+                <div class="proposition-input">
+                    <input type="radio" name="q4" id="p1q4" value="false">
+                    <label for="p1q4"> 1996 </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q4" id="p2q4" value="true">
+                    <label for="p2q4"> 1995 </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q4" id="p3q4" value="false">
+                    <label for="p3q4"> 1994 </label>
+                </div>
+                <div class="proposition-input">
+                    <input type="radio" name="q4" id="p4q4" value="false">
+                    <label for="p4q4"> none of the above </label>
+                </div>
+            </div>
+            <button type="submit" class="container__btn">
+                Submit
+            </button>
+        </form>
+        <div class="resultat">
+            <p class="resultat__text"></p>
+            <button type="submit" class="resultat__btn">
+                Reload
+            </button>
+        </div>
+        <!-- <button type="submit" class="container__btn">
+            Submit
+        </button> -->
+    </div>
+</body>
+</html>
