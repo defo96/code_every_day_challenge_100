@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    width: 35vw;
+    height: auto;
+    padding: 2% 5%;
+    background-color: deepskyblue;
+    border-radius: 15px;
+}
+.container__trait{
+    width: 0%;
+    height: 6px;
+    background-color: white;
+    animation: trait    10s linear  infinite;
+}
+.text{
+    text-align: justify;
+    margin-top: 6%;
+}
+.profil{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.profil img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    /* background-color: black; */
+}
+.profil__name{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profession{
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes trait {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
